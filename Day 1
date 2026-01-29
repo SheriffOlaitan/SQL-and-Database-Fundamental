@@ -1,0 +1,45 @@
+Day 1
+-- SQL fundamental training 
+-- Select
+-- from
+
+select * 
+from customer
+limit 15;
+
+select *
+from actor
+limit 15;
+
+select customer_id, 
+       last_name
+from customer 
+order by last_name desc
+limit 20;
+
+select film_id, title, rating 
+from film;
+
+select payment_id, customer_id, amount
+from payment
+order by payment_id, customer_id, amount asc;
+
+select first_name, last_name
+from customer
+order by first_name asc, last_name desc;
+
+select amount
+from payment
+where amount >5; 
+
+select *
+from payment
+where amount between 7.99 and 8.99;
+
+select *
+from customer 
+where first_name like 'J%';
+
+select *
+from film
+where description like '%Drama%';
